@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nicknjagi/sunnyside-agency-landing-page)
-- Live Site URL: [visit↗](https://tubular-cocada-374c9c.netlify.app/)
+- Live Site URL: [visit↗](https://phenomenal-paletas-63aa89.netlify.app/)
 
 ## My process
 
