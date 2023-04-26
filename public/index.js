@@ -24,6 +24,10 @@ toMain.addEventListener('click', ()=> {
   })
 })
 
+window.addEventListener('DOMContentLoaded', ()=> {
+  topLink.style.visibility = 'hidden' 
+})
+
 window.addEventListener('scroll', ()=> {
   const posY = window.scrollY
 
