@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5f8d6222a2.js" crossorigin="anonymous"></script>
+</head>
+<body class="relative font-barlow text-lg ">
+  <!-- header -->
+  <header id="header" class="flex flex-col gap-20 md:gap-28 p-6 md:p-8 bg-[url('./images/mobile/image-header.jpg')] md:bg-[url('./images/desktop/image-header.jpg')] bg-cover bg-[center_bottom] w-full md:h-screen overflow-hidden ">
+    <div class="relative flex justify-between md:items-center">
+      <div >
+        <img id="home" class="md:w-44" src="./images/logo.svg" alt="logo">
+      </div>
+      <button id="menu" class="md:hidden">
+        <img src="./images/icon-hamburger.svg" alt="menu">
+      </button>
+      <nav id="nav" class="md:flex absolute md:relative left-0 md:left-auto top-24 md:top-auto w-full md:w-auto z-20 transition duration-300 translate-x-[125%] md:translate-x-0">
+        <ul class="links-container">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <button class="uppercase text-black px-8 py-3 rounded-full bg-Yellow md:bg-white font-bold font-fraunces hover:bg-[#6ECEFF] hover:text-white">Contact</button>
+        </ul>
+      </nav>
+    </div>
+    <section class="grid justify-center gap-12 md:gap-28 mb-24">
+      <h1 class="uppercase text-4xl md:text-5xl text-white text-center font-fraunces font-black tracking-[0.4rem] md:tracking-[0.6rem] leading-[3rem]">We are creatives</h1>
+      <a href="#" id="to-main" class="grid justify-center animate-[bounce_2s_infinite]">
+        <img src="./images/icon-arrow-down.svg" alt="scroll link">
+      </a>
+    </section>
+  </header>
+
+  <!-- main -->
+  <main id="main" class="grid grid-rows-auto md:grid-rows-[repeat(3,600px)] md:grid-cols-2">
+    <!-- transform image card-->
+    <div class="md:col-start-2 bg-[url('./images/mobile/image-transform.jpg')] md:bg-[url('./images/desktop/image-transform.jpg')] bg-cover bg-center h-[310px] md:h-full"></div>
+    <!-- text card-->
+    <div class="card-container md:col-start-1 md:row-start-1">
+        <div class="card">
+          <h2 class="">Transform your brand</h2>
+          <p class="py-6 leading-8">
+            We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a href="#" class="yellow"> Learn more <div class="bg-yellow-100 "></div></a>
+        </div>
+    </div>
+    <!-- standup image card-->
+    <div class="bg-[url('./images/mobile/image-stand-out.jpg')] md:bg-[url('./images/desktop/image-stand-out.jpg')] bg-cover bg-center h-[310px] md:h-full"></div>
+    <!-- text card-->
+    <div class="card-container">
+        <div class="card">
+          <h2 class="">Stand out to the right audience</h2>
+          <p class="py-6 leading-8">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="red"> Learn more <div class="bg-red-300 "></div></a>
+        </div>
+    </div>
+
+    <!-- graphic design text with image card -->
+    <div class="image-text-card text-Dark-desaturated-cyan-(graphic-design-text) bg-[url('./images/mobile/image-graphic-design.jpg')] md:bg-[url('./images/desktop/image-graphic-design.jpg')] bg-cover bg-[top_center] flex flex-col justify-end pb-10 px-3">
+      <div class="max-w-[330px] mx-auto">
+        <h2>Graphic design</h2>
+        <p class="text-base">
+          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’
+          attention.
+        </p>
+      </div>
+    </div>
+    <!-- photography text with image card -->
+    <div class="image-text-card text-Dark-blue-(photography-text) bg-[url('./images/mobile/image-photography.jpg')] md:bg-[url('./images/desktop/image-photography.jpg')] bg-cover bg-[top_center] flex flex-col justify-end pb-10 px-3">
+      <div class="max-w-[330px] mx-auto">
+        <h2>Photography</h2>
+        <p class="text-base">
+          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- testimonials & gallery -->
+  <section class="text-center ">
+    <div class="py-16 px-4 md:py-40">
+      <h3 class="uppercase text-base text-Grayish-blue font-fraunces tracking-[0.2rem] mb-16">Client testimonials</h3>
+      <div class="flex items-center flex-col justify-center md:flex-row gap-8 md:gap-12 text-Very-dark-desaturated-blue">
+        <!-- card start -->
+        <div class="max-w-[340px]">
+          <div >
+            <img class="mx-auto rounded-full w-16" src="./images/image-emily.jpg" alt="photo of Emily">
+          </div>
+          <p class="py-8">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <span class="testimonial-name">Emily R.</span>
+          <span class="position">Marketing Director</span>
+        </div>
+        <!-- end -->
+        <!-- card start -->
+        <div class="max-w-[340px]">
+          <div >
+            <img class="mx-auto rounded-full w-16" src="./images/image-thomas.jpg" alt="photo of Thomas">
+          </div>
+          <p class="py-8">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
+            experience.
+          </p>
+          <span class="testimonial-name">Thomas S.</span>
+          <span class="position">Chief Operating Officer</span>
+        </div>
+        <!-- end -->
+        <!-- card start -->
+        <div class="max-w-[340px]">
+          <div >
+            <img class="mx-auto rounded-full w-16" src="./images/image-jennie.jpg" alt="photo of Jennie">
+          </div>
+          <p class="py-8">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <span class="testimonial-name">Jennie F.</span>
+          <span class="position">Business Owner</span>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+    <div class="grid grid-rows-auto grid-cols-2 md:grid-cols-4 h-[375px] ">
+      <div class="gallery bg-[url('./images/mobile/image-gallery-milkbottles.jpg')] md:bg-[url('./images/desktop/image-gallery-milkbottles.jpg')] bg-bottom "></div>
+      <div class="gallery bg-[url('./images/mobile/image-gallery-orange.jpg')] md:bg-[url('./images/desktop/image-gallery-orange.jpg')] "></div>
+      <div class="gallery bg-[url('./images/mobile/image-gallery-cone.jpg')] md:bg-[url('./images/desktop/image-gallery-cone.jpg')] "></div>
+      <div class="gallery bg-[url('./images/mobile/image-gallery-sugar-cubes.jpg')] md:bg-[url('./images/desktop/image-gallery-sugarcubes.jpg')] "></div>
+    </div>
+  </section>
+  <!-- back to top btn -->
+  <a href="#" id="top-link" aria-label="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  <!-- footer -->
+  <footer class="flex flex-col justify-center bg-[#90D4C5] text-Dark-moderate-cyan-(footer) py-16">
+    <div class="mb-8">
+      <img class="mx-auto" src="./images/footer-logo.svg" alt="logo">
+    </div>
+    <ul class="flex gap-14 justify-center mb-16">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+    <div class="flex gap-6 justify-center">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+    </div>
+  </footer>
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
