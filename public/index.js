@@ -9,9 +9,10 @@ menu.addEventListener('click', ()=>{
   let contains = nav.classList.contains('translate-x-[125%]')
   if(contains) {
     nav.classList.replace('translate-x-[125%]', 'translate-x-[0%]')
+    menu.style.opacity = '0.5'
   } else {
     nav.classList.replace('translate-x-[0%]', 'translate-x-[125%]')
-    
+    menu.style.opacity = '1'
   }
 })
 
