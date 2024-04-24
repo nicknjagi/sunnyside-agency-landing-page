@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/images/screenshot.png)
+![](./public/images/screenshot.webp)
 
 ### Links
 
